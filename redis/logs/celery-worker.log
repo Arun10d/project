@@ -1,0 +1,178 @@
+[2018-04-23 13:43:09,856: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2018-04-23 13:43:09,861: INFO/MainProcess] mingle: searching for neighbors
+[2018-04-23 13:43:10,875: INFO/MainProcess] mingle: all alone
+[2018-04-23 13:43:10,887: WARNING/MainProcess] /home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2018-04-23 13:43:10,888: INFO/MainProcess] celery@decoders-HP-ProBook-6470b ready.
+[2018-04-23 14:35:41,613: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/celery/worker/consumer/consumer.py", line 320, in start
+    blueprint.start(self)
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/celery/bootsteps.py", line 119, in start
+    step.start(parent)
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/celery/worker/consumer/consumer.py", line 596, in start
+    c.loop(*c.loop_args())
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/celery/worker/loops.py", line 88, in asynloop
+    next(loop)
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/kombu/async/hub.py", line 354, in create_loop
+    cb(*cbargs)
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/kombu/transport/redis.py", line 1040, in on_readable
+    self.cycle.on_readable(fileno)
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/kombu/transport/redis.py", line 337, in on_readable
+    chan.handlers[type]()
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/kombu/transport/redis.py", line 667, in _receive
+    ret.append(self._receive_one(c))
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/kombu/transport/redis.py", line 678, in _receive_one
+    response = c.parse_response()
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/redis/client.py", line 2430, in parse_response
+    return self._execute(connection, connection.read_response)
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/redis/client.py", line 2415, in _execute
+    connection.connect()
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/redis/connection.py", line 489, in connect
+    raise ConnectionError(self._error_message(e))
+ConnectionError: Error 111 connecting to localhost:6379. Connection refused.
+[2018-04-23 14:35:41,626: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379/0: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 2.00 seconds...
+
+[2018-04-23 14:35:43,633: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2018-04-23 14:35:43,643: INFO/MainProcess] mingle: searching for neighbors
+[2018-04-23 14:35:44,648: INFO/MainProcess] mingle: all alone
+[2018-04-23 14:36:14,800: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2018-04-23 14:36:14,805: INFO/MainProcess] mingle: searching for neighbors
+[2018-04-23 14:36:15,818: INFO/MainProcess] mingle: all alone
+[2018-04-23 14:36:15,829: WARNING/MainProcess] /home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2018-04-23 14:36:15,829: INFO/MainProcess] celery@decoders-HP-ProBook-6470b ready.
+[2018-04-23 14:37:29,772: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/celery/worker/consumer/consumer.py", line 320, in start
+    blueprint.start(self)
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/celery/bootsteps.py", line 119, in start
+    step.start(parent)
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/celery/worker/consumer/consumer.py", line 596, in start
+    c.loop(*c.loop_args())
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/celery/worker/loops.py", line 88, in asynloop
+    next(loop)
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/kombu/async/hub.py", line 354, in create_loop
+    cb(*cbargs)
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/kombu/transport/redis.py", line 1040, in on_readable
+    self.cycle.on_readable(fileno)
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/kombu/transport/redis.py", line 337, in on_readable
+    chan.handlers[type]()
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/kombu/transport/redis.py", line 667, in _receive
+    ret.append(self._receive_one(c))
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/kombu/transport/redis.py", line 678, in _receive_one
+    response = c.parse_response()
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/redis/client.py", line 2430, in parse_response
+    return self._execute(connection, connection.read_response)
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/redis/client.py", line 2415, in _execute
+    connection.connect()
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/redis/connection.py", line 489, in connect
+    raise ConnectionError(self._error_message(e))
+ConnectionError: Error 111 connecting to localhost:6379. Connection refused.
+[2018-04-23 14:37:29,785: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379/0: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 2.00 seconds...
+
+[2018-04-23 14:37:31,792: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2018-04-23 14:37:31,802: INFO/MainProcess] mingle: searching for neighbors
+[2018-04-23 14:37:32,807: INFO/MainProcess] mingle: all alone
+[2018-04-23 14:37:40,889: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2018-04-23 14:37:40,894: INFO/MainProcess] mingle: searching for neighbors
+[2018-04-23 14:37:41,910: INFO/MainProcess] mingle: all alone
+[2018-04-23 14:37:41,921: WARNING/MainProcess] /home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2018-04-23 14:37:41,921: INFO/MainProcess] celery@decoders-HP-ProBook-6470b ready.
+[2018-04-23 14:39:04,345: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/celery/worker/consumer/consumer.py", line 320, in start
+    blueprint.start(self)
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/celery/bootsteps.py", line 119, in start
+    step.start(parent)
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/celery/worker/consumer/consumer.py", line 596, in start
+    c.loop(*c.loop_args())
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/celery/worker/loops.py", line 88, in asynloop
+    next(loop)
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/kombu/async/hub.py", line 354, in create_loop
+    cb(*cbargs)
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/kombu/transport/redis.py", line 1040, in on_readable
+    self.cycle.on_readable(fileno)
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/kombu/transport/redis.py", line 337, in on_readable
+    chan.handlers[type]()
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/kombu/transport/redis.py", line 667, in _receive
+    ret.append(self._receive_one(c))
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/kombu/transport/redis.py", line 678, in _receive_one
+    response = c.parse_response()
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/redis/client.py", line 2430, in parse_response
+    return self._execute(connection, connection.read_response)
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/redis/client.py", line 2415, in _execute
+    connection.connect()
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/redis/connection.py", line 489, in connect
+    raise ConnectionError(self._error_message(e))
+ConnectionError: Error 111 connecting to localhost:6379. Connection refused.
+[2018-04-23 14:39:04,360: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379/0: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 2.00 seconds...
+
+[2018-04-23 14:39:06,365: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2018-04-23 14:39:06,372: INFO/MainProcess] mingle: searching for neighbors
+[2018-04-23 14:39:07,377: INFO/MainProcess] mingle: all alone
+[2018-04-23 14:53:24,220: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/celery/worker/consumer/consumer.py", line 320, in start
+    blueprint.start(self)
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/celery/bootsteps.py", line 119, in start
+    step.start(parent)
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/celery/worker/consumer/consumer.py", line 596, in start
+    c.loop(*c.loop_args())
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/celery/worker/loops.py", line 88, in asynloop
+    next(loop)
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/kombu/async/hub.py", line 354, in create_loop
+    cb(*cbargs)
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/kombu/transport/redis.py", line 1040, in on_readable
+    self.cycle.on_readable(fileno)
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/kombu/transport/redis.py", line 337, in on_readable
+    chan.handlers[type]()
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/kombu/transport/redis.py", line 667, in _receive
+    ret.append(self._receive_one(c))
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/kombu/transport/redis.py", line 678, in _receive_one
+    response = c.parse_response()
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/redis/client.py", line 2430, in parse_response
+    return self._execute(connection, connection.read_response)
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/redis/client.py", line 2415, in _execute
+    connection.connect()
+  File "/home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/redis/connection.py", line 489, in connect
+    raise ConnectionError(self._error_message(e))
+ConnectionError: Error 111 connecting to localhost:6379. Connection refused.
+[2018-04-23 14:53:24,231: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379/0: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 2.00 seconds...
+
+[2018-04-23 14:53:26,239: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2018-04-23 14:53:26,249: INFO/MainProcess] mingle: searching for neighbors
+[2018-04-23 14:53:27,254: INFO/MainProcess] mingle: all alone
+
+worker: Warm shutdown (MainProcess)
+ 
+ -------------- celery@decoders-HP-ProBook-6470b v4.1.0 (latentcall)
+---- **** ----- 
+--- * ***  * -- Linux-4.10.0-28-generic-x86_64-with-Ubuntu-16.04-xenial 2018-04-23 14:37:40
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         redis:0x7f4354668450
+- ** ---------- .> transport:   redis://localhost:6379/0
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 4 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . send.tasks.test
+
+[2018-04-24 04:35:16,998: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2018-04-24 04:35:17,003: INFO/MainProcess] mingle: searching for neighbors
+[2018-04-24 04:35:18,015: INFO/MainProcess] mingle: all alone
+[2018-04-24 04:35:18,069: WARNING/MainProcess] /home/decoders/Desktop/redis/arun/local/lib/python2.7/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2018-04-24 04:35:18,069: INFO/MainProcess] celery@decoders-HP-ProBook-6470b ready.
+[2018-04-24 04:56:45,593: INFO/MainProcess] Events of group {task} enabled by remote.
